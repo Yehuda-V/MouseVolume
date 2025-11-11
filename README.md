@@ -1,9 +1,14 @@
-# 🖱️ MouseVolume — Control Windows Volume with Mouse Side Buttons
+<p align="center">
+  <img src="./assets/preview.png" alt="MouseVolume Preview" width="200"/>
+</p>
+
+<h1 align="center"> 🖱️ MouseVolume 🔊</h1>
+<h3 align="center">Control Windows Volume with Mouse Side Buttons</h3>
 
 **MouseVolume** is a lightweight Windows utility that lets you control system volume using your mouse's side buttons.  
 No heavy apps, no background junk, just fast, clean volume control.
 
-> **Windows-only utility**
+> **Windows-only** utility
 
 Perfect for:
 
@@ -17,11 +22,7 @@ Perfect for:
 
 ## 🎥 Demo
 
-> _(Add your GIF / video preview here)_
-
-```
-[ Your GIF / MP4 will appear here when added on GitHub ]
-```
+[![Demo](./assets/demo-preview.gif)](https://youtu.be/sb3rJ_buQTE)
 
 ---
 
@@ -30,8 +31,6 @@ Perfect for:
 - **Mouse Back Button** → Volume Down
 - **Mouse Forward Button** → Volume Up  
   _(Technical names: XButton1 = Back, XButton2 = Forward)_
-- 🟢 Tray icon when active
-- 🔴 Tray icon when disabled
 - Starts with Windows (installer option)
 - Stand‑alone EXE
 - Very lightweight & fast
@@ -40,12 +39,10 @@ Perfect for:
 
 ## 🪟 Supported OS
 
-| OS         | Supported |
-| ---------- | --------- |
-| Windows 11 | ✅        |
-| Windows 10 | ✅        |
-| macOS      | ❌        |
-| Linux      | ❌        |
+| OS            | Supported |
+| ------------- | --------- |
+| Windows       | ✅        |
+| macOS & Linux | ❌        |
 
 ---
 
@@ -55,7 +52,7 @@ Perfect for:
 
 Download the latest installer from Releases:
 
-👉 https://github.com/**YOUR_USERNAME**/MouseVolume/releases/latest
+👉 https://github.com/Yehuda-V/MouseVolume/releases/latest
 
 Run:
 
@@ -66,9 +63,7 @@ MouseVolume_Setup.exe
 The installer will:
 
 - Copy files to:
-  ```
   %localappdata%\Tools\MouseVolume\
-  ```
 - Add a Startup shortcut (runs automatically)
 - Launch the app — tray icon will appear ✅
 
@@ -77,21 +72,22 @@ The installer will:
 Download:
 
 ```
-MouseVolume.exe
+MouseVolume_Portable_v1.0.0.zip
 ```
 
-Run it — done.  
+Make sure to extract **all files** (EXE + icons) to the same folder before running.
+
+Run `MouseVolume.exe` — done ✅  
 No installation required.
 
 ---
 
 ## ⌨️ Usage
 
-| Action        | Button / Hotkey           |
-| ------------- | ------------------------- |
-| Volume Up     | Mouse Forward Side Button |
-| Volume Down   | Mouse Back Side Button    |
-| Toggle ON/OFF | Ctrl + Pause              |
+| Action      | Button / Hotkey           |
+| ----------- | ------------------------- |
+| Volume Up   | Mouse Forward Side Button |
+| Volume Down | Mouse Back Side Button    |
 
 ---
 
@@ -100,11 +96,11 @@ No installation required.
 ```
 MouseVolume/
 ├─ src/
-│  ├─ MouseVolume.ahk
-│  ├─ MouseVolume.ico
-│  ├─ MouseVolume_off.ico
-│  ├─ installer
-│  │  ├─ MouseVolume.iss
+│ ├─ MouseVolume.ahk
+│ ├─ MouseVolume.ico
+│ ├─ MouseVolume_off.ico
+│ ├─ installer
+│ │ ├─ MouseVolume.iss
 └─ README.md
 ```
 
@@ -127,7 +123,7 @@ src/MouseVolume.ahk
 
 ### Compile EXE
 
-Right‑click the `.ahk` → **Compile**  
+Right‑click the `.ahk` → **Compile**
 Or via terminal:
 
 ```
